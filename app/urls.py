@@ -14,8 +14,9 @@ from core.views import CategoriaViewsSet
 
 router = DefaultRouter()
 
-router.register(r"users", UserViewSet, basename="users")
 router.register(r"categorias", CategoriaViewsSet)
+router.register(r"users", UserViewSet, basename="users")
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
